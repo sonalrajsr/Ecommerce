@@ -20,3 +20,15 @@ def home(request):
         # Handle the case when the user is not logged in
         return render(request, 'home.html', {'all_featured_products' : all_featured_products,
                             'all_new_products' : all_new_products })
+    
+def shop(request):
+    all_featured_products = Featured_Product.objects.all()
+    all_new_products = New_arrival.objects.all()
+    return render(
+        request, 
+        'shop.html',
+        {
+          'all_featured_products' : all_featured_products,
+            'all_new_products' : all_new_products   
+        }
+    )

@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from ekart import view
+from ekart import views
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -25,9 +25,12 @@ from django.conf import settings
 admin.site.site_header = "Cara Admin"
 admin.site.site_title = "cara Admin Portal"
 admin.site.index_title = "Welcome to Cara Shopping Portal"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view.home, name='home'),
+    path('', views.home, name='home'),
+    path('/shop', views.shop, name='shop'),
     path('accounts/', include('accounts.url')),
     # path('cart/', include('cart.url')),
     # path('orders/', include('orders.url')),
