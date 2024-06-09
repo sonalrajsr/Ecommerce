@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'orders',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,8 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Define the base URL for serving media files
+MEDIA_URL = '/media/'
+
+# Specify the directory where media files are stored
+MEDIA_ROOT = BASE_DIR / 'media'

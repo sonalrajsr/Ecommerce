@@ -17,15 +17,23 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from ekart import view
+from django.conf.urls.static import static
+from django.conf import settings
+
+
 
 admin.site.site_header = "Cara Admin"
 admin.site.site_title = "cara Admin Portal"
 admin.site.index_title = "Welcome to Cara Shopping Portal"
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view.home),
+    path('', view.home, name='home'),
     path('accounts/', include('accounts.url')),
     # path('cart/', include('cart.url')),
     # path('orders/', include('orders.url')),
-    # path('products/', include('products.url')),
+    path('products/', include('products.url')),
+    path('contact/', include('contact.url')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

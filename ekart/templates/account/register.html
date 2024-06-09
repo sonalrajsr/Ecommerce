@@ -20,42 +20,43 @@
         <div class="image-holder">
             <img src="{% static 'assets/registration-form-1.jpg' %}" alt="Registration Form Image">
         </div>
-        <form action="">
-            <h3>Registration Form</h3>
-            <div class="form-group">
-                <input type="text" placeholder="First Name" class="form-control">
-                <input type="text" placeholder="Last Name" class="form-control">
-            </div>
-            <div class="form-wrapper">
-                <input type="text" placeholder="Username" class="form-control">
-                <i class="zmdi zmdi-account"></i>
-            </div>
-            <div class="form-wrapper">
-                <input type="text" placeholder="Email Address" class="form-control">
-                <i class="zmdi zmdi-email"></i>
-            </div>
-            <div class="form-wrapper">
-                <select name="" id="" class="form-control">
-                    <option value="" disabled selected>Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-                <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
-            </div>
-            <div class="form-wrapper">
-                <input type="password" placeholder="Password" class="form-control">
-                <i class="zmdi zmdi-lock"></i>
-            </div>
-            <div class="form-wrapper">
-                <input type="password" placeholder="Confirm Password" class="form-control">
-                <i class="zmdi zmdi-lock"></i>
-            </div>
-            <button>Register
-                <i class="zmdi zmdi-arrow-right"></i>
-            </button>
-        </form>
+<form method="post">
+    {% csrf_token %}
+    <h3>Registration Form</h3>
+    <div class="form-group">
+        <input type="text" name="first_name" placeholder="First Name" class="form-control">
+        <input type="text" name="last_name" placeholder="Last Name" class="form-control">
     </div>
+    <div class="form-wrapper">
+        <input type="text" name="username" placeholder="Username" class="form-control">
+        <i class="zmdi zmdi-account"></i>
+    </div>
+    <div class="form-wrapper">
+        <input type="text" name="email" placeholder="Email Address" class="form-control">
+        <i class="zmdi zmdi-email"></i>
+    </div>
+    <!-- <div class="form-wrapper">
+        <select name="gender" id="gender" class="form-control">
+            <option value="" disabled selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+    </div> -->
+    <div class="form-wrapper">
+        <input type="password" name="password" placeholder="Password" class="form-control">
+        <i class="zmdi zmdi-lock"></i>
+    </div>
+    <div class="form-wrapper">
+        <input type="password" name="confirm_password" placeholder="Confirm Password" class="form-control">
+        <i class="zmdi zmdi-lock"></i>
+    </div>
+    <button type="submit">Register
+        <i class="zmdi zmdi-arrow-right"></i>
+    </button>
+</form>
+</div>
 </div>
 
 </body>

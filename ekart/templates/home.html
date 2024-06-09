@@ -46,10 +46,11 @@
         <h6>Summer Collection New Modern Design</h6>
     </div>
     <div class="product-colmn">
+        {% for product in all_featured_products %}
         <div class="product-feature">
-            <img src="../static/assets/img/products/f1.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Cartoon Astronaut T-Shirts</h4>
+            <img src="{{ product.image.url }}" alt="{{product.name}}">
+            <h6>{{product.company}}</h6>
+            <h4>{{product.name}}</h4>
             <div id="star">
                 <i class="fa-solid fa-star" style="color: #feee3e;"></i>
                 <i class="fa-solid fa-star" style="color: #feee3e;"></i>
@@ -58,125 +59,12 @@
                 <i class="fa-solid fa-star" style="color: #feee3e;"></i>
             </div>
             <div id="doller">
-                <h5>$78</h5>
+                <h5>${{product.price}}</h5>
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/f2.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Green flower T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-regular fa-star-half-stroke" style="color: #feee3e;"></i>
-                
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/f3.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Rose Brown T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/f4.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Pink white T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-regular fa-star-half-stroke" style="color: #feee3e;"></i>
-                
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/f5.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Sky flower T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-regular fa-star-half-stroke" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/f6.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Party Wear Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/f7.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Long Plasoo</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/f8.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Full seleve Top</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
-    
 </section>
 
 <section id="banner">
@@ -193,137 +81,28 @@
         <h6>Summer Collection New Modern Design</h6>
     </div>
     <div class="product-colmn">
-        <div class="product-feature">
-            <img src="../static/assets/img/products/n1.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Cartoon Astronaut T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
+        <div class="product-colmn">
+            {% for product in all_new_products %}
+            <div class="product-feature">
+                <img src="{{ product.image.url }}" alt="{{product.name}}">
+                <h6>{{product.company}}</h6>
+                <h4>{{product.name}}</h4>
+                <div id="star">
+                    <i class="fa-solid fa-star" style="color: #feee3e;"></i>
+                    <i class="fa-solid fa-star" style="color: #feee3e;"></i>
+                    <i class="fa-solid fa-star" style="color: #feee3e;"></i>
+                    <i class="fa-solid fa-star" style="color: #feee3e;"></i>
+                    <i class="fa-solid fa-star" style="color: #feee3e;"></i>
+                </div>
+                <div id="doller">
+                    <h5>${{product.price}}</h5>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
             </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/n2.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Green flower T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-regular fa-star-half-stroke" style="color: #feee3e;"></i>
-                
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/n3.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Rose Brown T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/n4.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Pink white T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-regular fa-star-half-stroke" style="color: #feee3e;"></i>
-                
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/n5.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Sky flower T-Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-regular fa-star-half-stroke" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/n6.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Party Wear Shirts</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/n7.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Long Plasoo</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <div class="product-feature">
-            <img src="../static/assets/img/products/n8.jpg" alt="t-shirt photo">
-            <h6>adidas</h6>
-            <h4>Full seleve Top</h4>
-            <div id="star">
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-                <i class="fa-solid fa-star" style="color: #feee3e;"></i>
-            </div>
-            <div id="doller">
-                <h5>$78</h5>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
+            {% endfor %}
         </div>
     </div>
-    
+
 </section>
 
 <section class="banner">
