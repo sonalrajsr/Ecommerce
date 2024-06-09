@@ -30,7 +30,8 @@ admin.site.index_title = "Welcome to Cara Shopping Portal"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('/shop', views.shop, name='shop'),
+    path('shop/', views.shop, name='shop'),
+    path('about/', views.about, name='about'),
     path('accounts/', include('accounts.url')),
     # path('cart/', include('cart.url')),
     # path('orders/', include('orders.url')),

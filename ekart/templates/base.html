@@ -14,8 +14,8 @@
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'shop' %}">Shop</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
             {% if username %}
             <li><a href="#">{{ username }}</a></li>
             {% else %}

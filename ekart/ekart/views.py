@@ -32,3 +32,6 @@ def shop(request):
             'all_new_products' : all_new_products   
         }
     )
+
+def about(request):
+    return render(request, 'about.html')
