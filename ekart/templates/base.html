@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My e-Kart{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="../static/assets/img/logo.png" alt="logo" class="logo"></a>
+        <div id="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+        </div>
+    </section>
+    {% block content %}
+        <!-- Default content can go here, or it can be left empty -->
+    {% endblock %}
+
+    <section id="footer">
+        <div class="footer-left">
+            <h3>Sign Up For Newsletters</h3>
+            <h6>Get E-mail updates about latest shop and special offers</h6>
+        </div>
+        <div class="footer-right">
+            <input type="email" name="" id="Enter you maail here">
+            <button>Sign Up</button>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- <script src="../static/idnex.js"></script> -->
+</body>
+</html>
