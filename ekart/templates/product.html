@@ -111,14 +111,14 @@
                 <p>Rating: {{ product.rating }}</p>
                 <p>{{ product.description }}</p>
                 <div class="buttons">
-                    <a href="" class="btn">Add to Cart</a>
+                    <a href="{% url 'add_to_cart' product.id %}" class="btn">Add to Cart</a>
                     <a href="{% url 'buy_now' product.id %}" class="btn">Buy Now</a>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <p>Our Company &copy; 2024</p>
+        <p>Cara &copy; 2024</p>
     </footer>
 </body>
 </html>
