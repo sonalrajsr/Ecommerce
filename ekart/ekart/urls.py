@@ -34,7 +34,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('accounts/', include('accounts.url')),
     # path('cart/', include('cart.url')),
-    # path('orders/', include('orders.url')),
+    path('orders/', include('orders.url')),
     path('products/', include('products.url')),
     path('contact/', include('contact.url')),
 ]

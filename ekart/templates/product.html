@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.name }}</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: #ff9900 3px solid;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .product-details {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-details img {
+            max-width: 100%;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .product-info {
+            flex: 2;
+            margin-left: 20px;
+        }
+
+        .product-info h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .product-info p {
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .product-info .price {
+            font-size: 24px;
+            color: #e8491d;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e68a00;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Details</h1>
+    </header>
+    <div class="container">
+        <div class="product-details">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            <div class="product-info">
+                <h2>{{ product.name }}</h2>
+                <p>By {{ product.company }}</p>
+                <p class="price">${{ product.price }}</p>
+                <p>Rating: {{ product.rating }}</p>
+                <p>{{ product.description }}</p>
+                <div class="buttons">
+                    <a href="" class="btn">Add to Cart</a>
+                    <a href="{% url 'buy_now' product.id %}" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Our Company &copy; 2024</p>
+    </footer>
+</body>
+</html>
