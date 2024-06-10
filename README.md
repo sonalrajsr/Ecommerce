@@ -39,7 +39,7 @@ This is a comprehensive e-commerce web application built with Django. The applic
 ### Steps
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/ecommerce-web-app.git
+    git clone https://github.com/sonalrajsr/Ecommerce.git
     cd ecommerce-web-app
     ```
 
