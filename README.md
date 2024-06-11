@@ -1,16 +1,5 @@
 # E-commerce Web Application
 
-## Table of Contents
-- [Project Description](#project-description)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
 ## Project Description
 This is a comprehensive e-commerce web application built with Django. The application provides a seamless shopping experience for users, featuring a dynamic product catalog, user authentication, cart functionality, secure checkout, and order tracking. The project aims to offer a scalable and secure platform for online shopping.
 
