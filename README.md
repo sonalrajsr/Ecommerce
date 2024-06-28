@@ -8,9 +8,7 @@ This is a comprehensive e-commerce web application built with Django. The applic
 - Dynamic Product Catalog
 - Shopping Cart and Checkout System
 - Order Management and Tracking
-- Secure Payment Gateway Integration
 - Admin Interface for Managing Products, Orders, and Users
-- Responsive Design for Mobile and Desktop
 
 ## Technologies Used
 - **Frontend:** HTML5, CSS3, JavaScript
